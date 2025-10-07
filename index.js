@@ -19,8 +19,7 @@ function(a) {
             n = i.attr("lay-id");
             n === a && (l = !0, t.index = e)
         }), d = d || "新标签页", e.pageTabs) l || (setTimeout(function() {
-            r(".layadmin-tabsbody-item").removeClass("layui-show")
-            r(s).append(['<div class="layadmin-tabsbody-item layui-show">', '<iframe src="' + a + '" frameborder="0" class="layadmin-iframe" onload="loginload(this)"></iframe>', "</div>"].join(""))
+            r(s).append(['<div class="layadmin-tabsbody-item layui-show">', '<iframe src="' + a + '" frameborder="0" class="layadmin-iframe"></iframe>', "</div>"].join(""))
         },
         10), t.index = u.length, i.tabAdd(o, {
             title: "<span>" + d + "</span>",
